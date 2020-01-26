@@ -1,3 +1,3 @@
 # dotfiles
 
-Master branch
+Develop branch
