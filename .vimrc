@@ -9,9 +9,12 @@ set expandtab
 set incsearch
 set hlsearch
 
+" brackets, disable swap & visual bell
 set showmatch
 set noswapfile
 set novb
+
+set rnu
 colorscheme dracula
 
 
