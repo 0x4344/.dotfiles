@@ -1,8 +1,8 @@
 syntax on
 
 " tab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 
 " search
@@ -17,7 +17,12 @@ set novb
 set rnu
 colorscheme dracula
 
+" Vim Plugins
+" start
+call plug#begin('~/.vim/plugged')
 
+Plug 'junegunn/goyo.vim'
 
-
+" end
+call plug#end()
 

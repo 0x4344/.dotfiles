@@ -120,5 +120,5 @@ fi
 alias tmux="TERM=screen-256color-bce tmux"
 alias tmux="tmux -2"
 
-# python3 
+# python3  
 alias py=python3  
