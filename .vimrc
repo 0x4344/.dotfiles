@@ -17,7 +17,12 @@ set novb
 set rnu
 colorscheme dracula
 
+" Vim Plugins
+" start
+call plug#begin('~/.vim/plugged')
 
+Plug 'junegunn/goyo.vim'
 
-
+" end
+call plug#end()
 
