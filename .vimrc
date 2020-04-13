@@ -17,11 +17,19 @@ set novb
 set rnu
 colorscheme dracula
 
+" vim- plug
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+      autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 " vim plugins
 call plug#begin('~/.vim/plugged')
 
 " plugins
 Plug 'junegunn/goyo.vim'
+Plug 'junegunn/vim-easy-align'
 
 " end
 call plug#end()
