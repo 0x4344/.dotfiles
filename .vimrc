@@ -30,6 +30,8 @@ call plug#begin('~/.vim/plugged')
 " plugins
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/vim-easy-align'
+Plug '907th/vim-auto-save'
+Plug 'scrooloose/nerdtree'
 
 " end
 call plug#end()
@@ -39,3 +41,11 @@ set pastetoggle=<F2>
 
 " mouse scroll
 set mouse=a
+
+" autosave
+let g:auto_save = 1  " enable AutoSave on Vim startup
+let g:auto_save_silent = 1  " do not display the auto-save notification
+let g:auto_save_events = ["InsertLeave", "TextChanged", "CompleteDone"]
+
+" nerdtree
+map <C-n> :NERDTreeToggle<CR>

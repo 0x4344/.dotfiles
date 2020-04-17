@@ -122,3 +122,11 @@ alias tmux="tmux -2"
 
 # python3  
 alias py=python3  
+
+# git
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+# bash username with git branch name
+export PS1="\[\033[1;37m\]\u@\W\[\e[91m\]\$(parse_git_branch)\[\e[00m\] \$ "
