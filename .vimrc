@@ -32,6 +32,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/vim-easy-align'
 Plug '907th/vim-auto-save'
 Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
 
 " end
 call plug#end()
