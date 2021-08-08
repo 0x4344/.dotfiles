@@ -28,6 +28,7 @@ filetype plugin on
 
 " remaps
 let mapleader = " "
+map q <Nop>
 
 " plugins
 call plug#begin('~/.config/nvim/autoload/plugged')
