@@ -29,8 +29,10 @@ filetype plugin on
 " remaps
 let mapleader = " "
 map q <Nop>
+vnoremap <C-C> :w !xclip -i -sel c<CR><CR> 
+nnoremap <F1> :!python3 %<CR>
 
-" plugins
+"plugins
 call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'vimwiki/vimwiki'
 Plug 'jiangmiao/auto-pairs'

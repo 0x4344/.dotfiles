@@ -54,8 +54,6 @@ man() {
 
 # pfetch
 export PF_ASCII="tux"
-# starts pfetch
-pfetch
 
 #vim keys
 bindkey '^x^x' edit-command-line
@@ -72,7 +70,6 @@ alias o="xdg-open ."
 alias cfn="vim $HOME/.config/nvim/init.vim"
 alias cfz="vim $HOME/.zshrc"
 alias sz="source $HOME/.zshrc"
-alias install="sudo apt install -y"
 alias purge="sudo apt purge -y"
 alias search="apt search"
 alias h='inpt=$(history | cut -c 8- | fzf -0 --tac) && echo "$inpt" | xclip -r -selection c'
@@ -91,15 +88,16 @@ alias ae="cd /home/mnt/Documents/privat/RBB/AE/OOP/Decorator/Cielenga_Damian_30_
 alias main="clear && javac Main.java && java Main"
 alias twitch="cd /home/mnt/Documents/privat/twitch"
 alias a="cd /home/mnt/Documents/arbeit/"
-alias c="xclip -selection c"
 alias pf="pfetch"
 alias ac="sudo apt autoclean && sudo apt autoremove -y"
 alias open="xdg-open ."
 alias vw="vim /home/mnt/vimwiki/index.wiki"
 alias repo="cd /home/mnt/Documents/work/repos/"
 alias htop="sudo htop"
-alias activate="source venv/bin/activate"
+alias activate="source .venv/bin/activate"
 alias ls="exa --icons"
 alias l="exa -a --icons"
 alias stow="stow -v"
 alias tree="exa -Ta"
+alias pdf="evince"
+alias doc='date +"%Y-%m-%d-" | xclip -r -selection c'
