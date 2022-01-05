@@ -23,6 +23,10 @@ fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# Path to groovy
+#export GROOVY_HOME="/home/mnt/.groovy-3.0.9"
+#export PATH="$PATH:$GROOVY_HOME/bin"
+
 # Path to your oh-my-zsh installation.
 export ZSH="/home/mnt/.oh-my-zsh"
 
@@ -62,7 +66,7 @@ bindkey '^x^x' edit-command-line
 export GPG_TTY=$(tty) 
 
 # aliases
-alias py='clear && python3'
+alias py='python3'
 alias suu='clear && sudo apt update && sudo apt full-upgrade -y && sudo flatpak update && sudo flatpak upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y && sudo snap refresh'
 alias nf="clear && neofetch"
 alias u="clear && uptime"
@@ -94,10 +98,15 @@ alias open="xdg-open ."
 alias vw="vim /home/mnt/vimwiki/index.wiki"
 alias repo="cd /home/mnt/Documents/work/repos/"
 alias htop="sudo htop"
-alias activate="source .venv/bin/activate"
+alias activate="source venv/bin/activate"
 alias ls="exa --icons"
 alias l="exa -a --icons"
 alias stow="stow -v"
 alias tree="exa -Ta"
 alias pdf="evince"
 alias doc='date +"%Y-%m-%d-" | xclip -r -selection c'
+alias tk="tmux kill-session"
+alias grep="grep --color=auto -i"
+alias cft="vim /home/mnt/.tmux.conf"
+alias ns="nslookup"
+alias notepad="ps aux | grep notepad | awk '{print $2}' | head -n 1"

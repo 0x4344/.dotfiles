@@ -76,7 +76,7 @@ window:
   #   - Maximized
   #   - Fullscreen
   #
-  startup_mode: Fullscreen
+  startup_mode: Maximized
 
   # Window title
   #title: Alacritty
@@ -177,7 +177,8 @@ font:
 colors:
   # Default colors
   primary:
-    background: '#0D0D0E'
+    background: '#000000'
+    #background: '#0D0D0E'
     foreground: '#c5c8c6'
 
     # Bright and dim foreground colors
@@ -265,6 +266,7 @@ colors:
   # Normal colors
   normal:
     black:   '#1d1f21'
+    #black:   '#1d1f21'
     red:     '#C01C28'
     green:   '#26A269'
     yellow:  '#A2734C'
